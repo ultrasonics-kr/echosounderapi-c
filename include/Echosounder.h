@@ -1,3 +1,4 @@
+// Copyright (c) EofE Ultrasonics Co., Ltd., 2024
 #if !defined(ECHOSOUNDER_H)
 #define ECHOSOUNDER_H
 

@@ -1,3 +1,4 @@
+// Copyright (c) EofE Ultrasonics Co., Ltd., 2024
 #if !defined(SINGLEECHOSOUNDER_H)
 #define SINGLEECHOSOUNDER_H
 

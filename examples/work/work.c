@@ -1,3 +1,4 @@
+// Copyright (c) EofE Ultrasonics Co., Ltd., 2024
 #include <stdio.h>
 
 #include "EchosounderCWrapper.h"

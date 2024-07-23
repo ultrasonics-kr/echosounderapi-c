@@ -1,3 +1,4 @@
+// Copyright (c) EofE Ultrasonics Co., Ltd., 2024
 #if !defined(SINGLESONARCOMMANDS_H)
 #define SINGLESONARCOMMANDS_H
 
