@@ -1,5 +1,6 @@
 #include <cstdio>
 #include <cstdarg>
+#include <string>
 
 #include "Echosounder.h"
 #include "DualEchosounder.h"
@@ -87,12 +88,12 @@ size_t EchosounderReadData(pSnrCtx snrctx, uint8_t *buffer, size_t size)
 
 long EchosounderValueToLong(pcEchosounderValue value)
 {
-    return strtol(value->value_text, NULL, 10);
+    return std::stol(value->value_text);
 }
 
 float EchosounderValueToFloat(pcEchosounderValue value)
 {
-    return strtof(value->value_text, NULL);
+    return std::stof(value->value_text);
 }
 
 const char *EchosounderValueToText(pcEchosounderValue value)
