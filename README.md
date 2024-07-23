@@ -25,7 +25,7 @@ Build tools
 
 Build command for Linux:
 
-    git clone https://github.com/ultrasonics-kr/echosounderapi-c.git
+    git clone --recursive https://github.com/ultrasonics-kr/echosounderapi-c.git
     cd echosounderapi-c
     mkdir build
     cd build
@@ -35,7 +35,7 @@ Build command for Linux:
 
     // or build using Ninja
     
-    git clone https://github.com/ultrasonics-kr/echosounderapi-c.git
+    git clone --recursive https://github.com/ultrasonics-kr/echosounderapi-c.git
     cd echosounderapi-c
     mkdir build
     cd build
@@ -44,7 +44,7 @@ Build command for Linux:
     
 Build command for Windows:
 
-    git clone https://github.com/ultrasonics-kr/echosounderapi-c.git
+    git clone --recursive https://github.com/ultrasonics-kr/echosounderapi-c.git
     cd echosounderapi-c
     mkdir build
     cd build
