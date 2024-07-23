@@ -1,6 +1,7 @@
 #include "Echosounder.h"
 
 #include <iostream>
+#include <initializer_list>
 #include <chrono>
 #include <deque>
 #include <iterator>
@@ -30,7 +31,7 @@ int Echosounder::SendCommandResponseCheck()
     const uint8_t okgotoken[]        = { 'O', 'K', ' ', 'g', 'o', '\r', '\n' };
     const uint8_t oktoken[]          = { 'O', 'K', '\r', '\n' };
 
-    command_result_ = {};
+    command_result_.clear();
     const auto time_begin = std::chrono::steady_clock::now();
 
     for (;;)
@@ -246,7 +247,7 @@ int Echosounder::GetSonarInfo()
         while (std::getline(istr, line))
         {
             line.erase(std::remove_if(line.begin(), line.end(),
-                                      [](const auto & echar)
+                                      [](char &echar)
             {
                 if (('\r' == echar) || ('\n' == echar))
                 {

@@ -81,7 +81,7 @@ add_dependencies(example_work ${PROJECT_NAME})
 target_link_libraries(example_work ${PROJECT_NAME})
 
 add_compile_definitions(_UNICODE UNICODE)
-set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 14)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 11)
 set_property(TARGET ${PROJECT_NAME} PROPERTY C_STANDARD 11)
 
 install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_CURRENT_LIST_DIR}/exe)
